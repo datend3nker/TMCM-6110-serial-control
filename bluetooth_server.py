@@ -12,7 +12,7 @@ def btserver_setup(servername = 'raspi'):
     advertise_service( server_sock, servername, service_id = uuid, service_classes = [ uuid, SERIAL_PORT_CLASS ], profiles = [ SERIAL_PORT_PROFILE ])                   
     print("Waiting for connection on RFCOMM channel %d" % port)
     client_sock, client_info = server_sock.accept()
-    return server_sock, True, port,  client_info
+    return server_sock, client_sock, True, port,  client_info
 
 
 def btserver_receive():

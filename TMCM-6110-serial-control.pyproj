@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ddb3aaaf-5600-421f-9f00-c258095d38e4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bluetooth_server.py</StartupFile>
+    <StartupFile>raspi_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="bluetooth_client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="laptop_main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="raspi_main.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="serial_control.py">
