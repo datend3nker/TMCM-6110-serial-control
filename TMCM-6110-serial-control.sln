@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TMCM-6110-serial-control", "TMCM-6110-serial-control.pyproj", "{DDB3AAAF-5600-421F-9F00-C258095D38E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDB3AAAF-5600-421F-9F00-C258095D38E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB3AAAF-5600-421F-9F00-C258095D38E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73CEC0A6-6A60-4F32-9015-39AE716DAA24}
+	EndGlobalSection
+EndGlobal
