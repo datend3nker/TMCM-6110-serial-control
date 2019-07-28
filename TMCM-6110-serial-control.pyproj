@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ddb3aaaf-5600-421f-9f00-c258095d38e4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bluetooth_client.py</StartupFile>
+    <StartupFile>bluetooth_server.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

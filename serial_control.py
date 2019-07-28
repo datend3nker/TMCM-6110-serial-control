@@ -1,7 +1,7 @@
 import serial
 import re
 #The name of the serial object hase to be "board", 9600 bit per secund and standard will be port "COM5" on windows and "//dev//ttyACM0" on linux!
-def setup(os, baud):
+def serial_setup(os, baud):
     port = 'COM5'
     if os == "win":
         port = 'COM5'
@@ -14,7 +14,7 @@ def setup(os, baud):
         raise Exception("Wrong port or baud rate")
     return board.is_open
 
-def sendcommand(Address = 1, Command = 3, Type = 0, Motor = 0, Value = 0):
+def serial_sendcommand(Address = 1, Command = 3, Type = 0, Motor = 0, Value = 0):
     instruction = [Address, Command, Type, Motor, "0x00", "0x00", "0x00", "0x00"]
     #prepeare the "Value" to be send
     hexValue = hex(Value) # convert value into a hex value
@@ -54,7 +54,7 @@ def sendcommand(Address = 1, Command = 3, Type = 0, Motor = 0, Value = 0):
         raise Exception("Error in calculating the checksum")
     board.write(instruction)
 
-def getreply():
+def serial_receive():
     counter = 0
     answerbin = [0, 0, 0,]
     answer = 0
@@ -76,7 +76,3 @@ def getreply():
     #__________________________________________________________________________________________________>
     return(status[answer])
 #example#__________________________________________________________________________________________________>
-setup('win',9600)
-sendcommand(1,4,0,0,0)
-answer = getreply()
-print(answer)
